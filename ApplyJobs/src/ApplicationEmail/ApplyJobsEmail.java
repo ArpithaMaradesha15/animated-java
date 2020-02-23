@@ -46,7 +46,7 @@ public class ApplyJobsEmail {
 
 	private static final String USERNAME = "arpitha.m.15393@gmail.com";
 
-	private static final String PASSWORD = "xxxxxxxxxxxxxxxxxx";
+	private static final String PASSWORD = "xxxxxxx";
 
 	private static final String SMTP_SERVER = "smtp.gmail.com";
 
