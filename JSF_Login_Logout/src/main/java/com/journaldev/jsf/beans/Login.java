@@ -73,7 +73,7 @@ private String msg;
 		System.out.println("Actionnn :: " + action);
 		 Vector vectorvalues = LoginDAO.validate(url, timex,action);
 		 starttime ="Timestamp from: "+(String) vectorvalues.get(0)+" to: "+(String) vectorvalues.get(2);
-		 stoptime = "Average Response time: "+(String) vectorvalues.get(2)+" of sample: "+(String) vectorvalues.get(1);
+		 stoptime = "Average Response time: "+(String) vectorvalues.get(3)+" of sample: "+(String) vectorvalues.get(1);
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("URL", url);
 			session.setAttribute("starttime", starttime);
