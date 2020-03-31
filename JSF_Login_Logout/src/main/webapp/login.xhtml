@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>login</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h3>JSF Login Logout</h3>
+		<h:outputText value="url" />
+		<h:inputText id="url" value="#{login.url}"></h:inputText>
+		<h:message for="url"></h:message>
+		<br /><br />
+		
+		<h:outputText value="timex" />
+		<h:inputText id="timex" value="#{login.timex}"></h:inputText>
+		<h:message for="timex"></h:message>
+		<br /><br />
+		
+		<h:commandButton action="#{login.validateUsernamePassword('start')}"
+			value="start"></h:commandButton>
+			<h:commandButton action="#{login.validateUsernamePassword('stop')}"
+			value="stop"></h:commandButton>
+			
+	</h:form>
+</h:body>
+</html>
